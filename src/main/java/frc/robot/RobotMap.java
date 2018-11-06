@@ -39,7 +39,7 @@ public class RobotMap {
   public DoubleSolenoid Punch = new DoubleSolenoid(4,5);
   public DigitalInput UpperArmSensor = new DigitalInput(4);
   public DigitalInput LowerArmSensor = new DigitalInput(5);
-  p
+
 public void Init(){
 
 }
