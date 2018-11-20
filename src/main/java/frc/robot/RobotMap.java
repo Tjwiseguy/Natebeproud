@@ -38,7 +38,7 @@ public class RobotMap {
   public static DifferentialDrive DriveTrain = new DifferentialDrive(Left, Right);
   public static Encoder LeftEncoder = new Encoder(0,1);
   public static Encoder RightEncoder = new Encoder(2,3);
-  public static DoubleSolenoid Arm = new DoubleSolenoid(2, 3);
+  public static DoubleSolenoid armPiston = new DoubleSolenoid(2, 3);
   public static DoubleSolenoid Punch = new DoubleSolenoid(4,5);
   public static DigitalInput UpperArmSensor = new DigitalInput(4);
   public static DigitalInput LowerArmSensor = new DigitalInput(5);
@@ -50,6 +50,7 @@ public class RobotMap {
   public static SpeedControllerGroup Raise = new SpeedControllerGroup(LeftClimb, RightClimb);
   public static AHRS NavX = new AHRS(SPI.Port.kMXP);
   public static DoubleSolenoid Shifter = new DoubleSolenoid(0,1);
+  
 
 
   public static void Init(){

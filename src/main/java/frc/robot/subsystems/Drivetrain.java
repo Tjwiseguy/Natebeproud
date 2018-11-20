@@ -33,10 +33,13 @@ public class Drivetrain extends Subsystem {
   private Encoder RightEncoder = RobotMap.RightEncoder;
   private static AHRS NavX = RobotMap.NavX;
   private static DoubleSolenoid Shifter = RobotMap.Shifter;
+  
+
+
 
   public void DriveOP(Joystick jStick){
     DriveTrain.arcadeDrive(jStick.getY(), jStick.getZ());
-
+    
   }
 
 
@@ -47,5 +50,9 @@ public class Drivetrain extends Subsystem {
   public void initDefaultCommand() {
     // Set the default command for a subsystem here.
     // setDefaultCommand(new MySpecialCommand());
+
+
+
+
   }
 }
