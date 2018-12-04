@@ -54,6 +54,10 @@ public class Arm extends Subsystem {
   public boolean getUpper(){
     return upperArmSensor.get();
   }
+  
+  public boolean getLower(){
+    return lowerArmSensor.get();
+  }
   public double WllToLive(){
     return 0;
   }
@@ -61,4 +65,5 @@ public class Arm extends Subsystem {
     piston.set(DoubleSolenoid.Value.kOff);
 
   }
+  
 }

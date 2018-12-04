@@ -13,9 +13,11 @@ import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.VictorSP;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 /**
@@ -50,6 +52,8 @@ public class RobotMap {
   public static SpeedControllerGroup Raise = new SpeedControllerGroup(LeftClimb, RightClimb);
   public static AHRS NavX = new AHRS(SPI.Port.kMXP);
   public static DoubleSolenoid Shifter = new DoubleSolenoid(0,1);
+  public static Joystick jStick = new Joystick(0);
+  public static JoystickButton climbButton = new JoystickButton(jStick, 1);
   
 
 
