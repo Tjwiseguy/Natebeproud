@@ -54,6 +54,8 @@ public class RobotMap {
   public static DoubleSolenoid Shifter = new DoubleSolenoid(0,1);
   public static Joystick jStick = new Joystick(0);
   public static JoystickButton climbButton = new JoystickButton(jStick, 1);
+  public static JoystickButton armup = new JoystickButton(jStick, 2);
+  public static JoystickButton armdown = new JoystickButton(jStick, 3);
   
 
 

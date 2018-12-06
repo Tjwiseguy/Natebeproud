@@ -10,6 +10,8 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import frc.robot.commands.ClimbUp;
+import frc.robot.commands.ArmUp;
+import frc.robot.commands.Armdown;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -21,10 +23,17 @@ public class OI {
   //// joystick.
   public static Joystick drivestick = new Joystick(0);
   public static JoystickButton climbButton = new JoystickButton(drivestick, 1);
+  public static JoystickButton armup = new JoystickButton(drivestick, 2);
+  public static JoystickButton armdown = new JoystickButton(drivestick, 3);
+
   
     
   public OI(){
     climbButton.whileHeld(new ClimbUp());
+    armup.whenPressed(new ArmUp());
+    armdown.whenPressed(new Armdown());
+
+    
   }
 
 
